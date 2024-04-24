@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<header>
+	<h1>KIKY RESTU NOVIANSYAH</h1>
+	</header>
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">Contact</a>
+	</nav>
+	<section>
+		<table border="1">
+			<thead>
+				<tr>
+					<td>No</td>
+					<td>Makanan</td>
+					<td>Minuman</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Nasi Padang</td>
+					<td>Es Degan</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Nasi Goreng</td>
+					<td>Es Teh</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Nasi Rawon</td>
+					<td>Es Durian</td>
+				</tr>
+			</tbody>
+		</table>
+		<form>
+			<label>Nama</label>
+			<input type="text">
+			<label>Umur</label>
+			<input type="text">
+			<h4>Jenis Kelamin</h4>
+			<label>Pria</label>
+			<input name="kelamin" type="radio">
+			<label>Wanita</label>
+			<input name="kelamin" type="radio">
+			<h4>Hobi</h4>
+			<label>Nyanyi</label>
+			<input type="checkbox">
+			<label>Muncak</label>
+			<input type="checkbox">
+			<h4>Alamat</h4>
+			<textarea></textarea>
+			<h4>Agama</h4>
+			<select>
+				<option>Islam</option>
+				<option>Kristen</option>
+				<option>Hindu</option>
+			</select>
+			<input type="submit" target="_blank">
+			<input type="reset">
+			<label>Password</label>
+			<input name="password" type="password">
+		</form>
+	</section>
+<body>
+</html>
