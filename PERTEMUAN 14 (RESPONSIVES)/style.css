@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        background: #444;
+        padding: 1rem 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        li {
+            margin: 0 1rem;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #4b6cb7;
+                }
+            }
+
+            ul {
+                display: none;
+                position: absolute;
+                background: #444;
+                padding: 1rem 0;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+                li {
+                    margin: 0;
+                    padding: 0.5rem 1rem;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: normal;
+                        transition: color 0.3s;
+
+                        &:hover {
+                            color: #4b6cb7;
+                        }
+                    }
+                }
+            }
+
+            &:hover > ul {
+                display: block;
+                top: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero {
+    background: url('https://www.spongebobshop.com/cdn/shop/products/SB-Standees-Spong-3_1200x.jpg?v=1603744568') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services {
+    background: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    nav {
+        ul {
+            flex-direction: column;
+
+            li {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .services {
+        padding: 1rem;
+    }
+}

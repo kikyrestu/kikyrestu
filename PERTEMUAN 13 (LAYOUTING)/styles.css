@@ -1,0 +1,135 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header, nav, main, footer {
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #FFC107;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFC107;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #e0e0e0;
+}
+
+main {
+  padding: 20px;
+}
+
+.box-model {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.box {
+  background-color: #eee;
+  padding: 20px;
+  border: 2px solid #000;
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.float-container {
+  overflow: hidden;
+  text-align: center;
+}
+
+.float-item {
+  float: left;
+  width: 30%;
+  margin: 1.66%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-layout {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-header, .fixed-content, .fixed-footer {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.fixed-header {
+  background-color: #ffcccc;
+}
+
+.fixed-content {
+  background-color: #ccffcc;
+}
+
+.fixed-footer {
+  background-color: #ccccff;
+}
+
+.fluid-layout {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fluid-header, .fluid-content, .fluid-footer {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.fluid-header {
+  background-color: #ffcccc;
+}
+
+.fluid-content {
+  background-color: #ccffcc;
+}
+
+.fluid-footer {
+  background-color: #ccccff;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}

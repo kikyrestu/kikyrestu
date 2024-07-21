@@ -1,0 +1,105 @@
+// style.scss
+
+$primary-color: #e74c3c; // Merah
+$secondary-color: #3498db; // Biru
+$font-stack: 'Helvetica Neue', sans-serif;
+
+// Mixin untuk border-radius
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+// Extend untuk box-shadow
+%box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: $primary-color;
+    padding: 20px;
+    text-align: center;
+
+    .title {
+        color: white;
+        margin: 0;
+    }
+}
+
+.navbar {
+    background-color: darken($primary-color, 10%);
+    padding: 10px;
+
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+        .nav-item {
+            margin: 0 15px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    padding: 20px;
+
+    .content-section {
+        background-color: white;
+        padding: 20px;
+        @include border-radius(5px);
+        @extend %box-shadow;
+
+        .section-title {
+            color: $primary-color;
+            margin-top: 0;
+        }
+
+        .section-text {
+            color: #333;
+        }
+    }
+
+    .nested-box {
+        .box {
+            background-color: lighten($primary-color, 30%);
+            padding: 20px;
+            @include border-radius(5px);
+            @extend %box-shadow;
+
+            .box-text {
+                color: darken($primary-color, 20%);
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $secondary-color;
+    padding: 10px;
+    text-align: center;
+
+    .footer-text {
+        color: white;
+        margin: 0;
+    }
+}

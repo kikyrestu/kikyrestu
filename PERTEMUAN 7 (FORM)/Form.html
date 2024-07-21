@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <audio src="mewing.mp3" hidden autoplay loop></audio>
+    <style>
+        *, body {
+            font-family: "Roboto", sans-serif;
+        }
+        input {
+            border-radius: 4px;
+            border-collapse: collapse;
+        }
+        legend {
+            background-color: chocolate;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        fieldset {
+            background-color: coral;
+            border-radius: 10px;
+            display: flex;
+        }
+        button {
+            background-color: brown;
+            color: white;
+            border-radius: 10px;
+        }
+        img {
+            width: 200px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>BIODATA PRIBADI</legend>
+        <img src="mewing-mew.png" alt="">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" value="Kiky Restu Noviansyah"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><textarea name="text" placeholder="Masukan alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td>TTL</td>
+                <td>:</td>
+                <td><input type="text"> <input type="date"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td><label for="pria"><input type="radio">Laki-Laki</label> <label for="perempuan"><input type="radio">Perempuan</label></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <td><select name="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Hobby</td>
+                <td>:</td>
+                <td><label for="gambar"><input type="radio">Menggambar</label></td>
+            </tr>
+            <tr>
+                <td>Motto</td>
+                <td>:</td>
+                <td><textarea name="text" placeholder="Masukan Motto anda"></textarea></td>
+            </tr>
+            <tr>
+                <td><a href="tes.html"><button type="reset">Reset</button></a> <button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
